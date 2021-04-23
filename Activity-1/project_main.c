@@ -17,6 +17,7 @@
  * @brief Initialize all the Peripherals and pin configurations
  * 
  */
+
 void peripheral_init(void)
 {
 	/* Configure LED Pin, heater pin and seat pin*/
