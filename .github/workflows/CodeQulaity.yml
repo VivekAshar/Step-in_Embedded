@@ -4,8 +4,14 @@ on:
   push:
     branches: [ master ]
   pull_request:
+<<<<<<< HEAD
     branches: [ master ]
   
+=======
+    branches: [ main ]
+
+  workflow_dispatch:
+>>>>>>> 151ca8668d3c364d7fe8a9bb1c43b3f2a64b4433
 
 jobs:
   build:
@@ -17,4 +23,4 @@ jobs:
     - name: get_cppcheck
       run: sudo apt-get install cppcheck
     - name: Code Quality
-      run: make analysis
+      run: make -C Activity-1/ analysis
